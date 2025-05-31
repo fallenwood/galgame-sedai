@@ -151,7 +151,7 @@ export const App = () => {
               <h1>
                 Galgame世代<span class="remove"> - 点击选择你玩过的Galgame</span>
                 <span class="ml-2 text-zinc-400 font-medium">
-                  anime-sedai.egoist.dev
+                  galgame.fallenwood.net
                 </span>
               </h1>
               <span class="shrink-0 whitespace-nowrap">
