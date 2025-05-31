@@ -155,7 +155,7 @@ export const App = () => {
                 </span>
               </h1>
               <span class="shrink-0 whitespace-nowrap">
-                我玩过 {selectedAnime.length}/
+                我玩过 {selectedAnime().length}/
                 {
                   Object.values(galData).flatMap((year) => {
                     return year.map((item) => item.title).slice(0, 12)
