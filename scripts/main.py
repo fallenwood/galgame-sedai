@@ -186,6 +186,7 @@ excludings = set([
     "重返未来：1999",
     "潜水员戴夫",
     "漫威蜘蛛侠2",
+    "超级马力欧兄弟 惊奇",
     # 2024
     "鸣潮",
     "动物井",
@@ -201,7 +202,8 @@ excludings = set([
     "铁拳8",
     "绝地潜兵2",
     "塞尔达传说 智慧的再现",
-    "最后生还者：第二部 Remastered"
+    "最后生还者：第二部 Remastered",
+    "女神异闻录：夜幕魅影"
 ])
 
 async def fetchImageIfNotExists(session, imgUrl, imgName, name, cookies):
@@ -274,7 +276,7 @@ async def fetch(cookies: str):
                                 img = "https:" + img
                             imgName = img.split("/")[-1]
 
-                            await fetchImageIfNotExists(session, img, imgName, title)
+                            await fetchImageIfNotExists(session, img, imgName, title, cookies)
 
                             entries.append({
                                 "title": title,
@@ -295,7 +297,7 @@ async def main():
         with open("cookies", "r") as f:
             cookies = f.readline()
     
-    await fetch(cookies)
+    await fetch(cookies=cookies)
 
 if __name__ == "__main__":
     asyncio.run(main())
