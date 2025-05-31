@@ -149,7 +149,7 @@ export const App = () => {
           >
             <div class="border-b justify-between p-2 text-lg  font-bold flex">
               <h1>
-                Galgame世代<span class="remove"> - 点击选择你玩过的Galgame</span>
+                我是Galgame糕手<span class="remove"> - 点击选择你玩过的Galgame</span>
                 <span class="ml-2 text-zinc-400 font-medium">
                   galgame.fallenwood.net
                 </span>
