@@ -1,0 +1,6 @@
+type Data = {
+  [key: string]: { title: string; rating: number, img: string }[];
+};
+
+const data: Data = {{ data }}
+export default data;

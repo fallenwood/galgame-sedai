@@ -149,7 +149,7 @@ export const App = () => {
           >
             <div class="border-b justify-between p-2 text-lg  font-bold flex">
               <h1>
-                我是Galgame糕手<span class="remove"> - 点击选择你玩过的Galgame</span>
+                我是Galgame糕手(v2.0)<span class="remove"> - 点击选择你玩过的Galgame</span>
                 <span class="ml-2 text-zinc-400 font-medium">
                   galgame.fallenwood.net
                 </span>
@@ -168,7 +168,7 @@ export const App = () => {
               const items = galData[year] || []
               return (
                 <div class="flex border-b">
-                  <div class="bg-red-500 shrink-0 text-white flex items-center font-bold justify-center p-1 size-16 md:size-20 border-black">
+                  <div class="bg-red-500 shrink-0 text-white flex items-center font-bold justify-center p-1 size-20 md:size-24 border-black">
                     {year}
                   </div>
                   <div class="flex shrink-0">
@@ -177,7 +177,7 @@ export const App = () => {
                       return (
                         <button
                           // key={item.title}
-                          class={`size-16 md:size-20 border-l break-all text-center shrink-0 inline-flex flex-col items-center p-1 overflow-hidden justify-center cursor-pointer text-sm  ${
+                          class={`size-20 md:size-24 border-l break-all text-center shrink-0 inline-flex flex-col items-center p-1 overflow-hidden justify-center cursor-pointer text-sm  ${
                             isSelected ? "bg-green-500" : "hover:bg-zinc-100"
                           }`}
                           title={item.title}
