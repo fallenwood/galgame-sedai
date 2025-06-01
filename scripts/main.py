@@ -191,7 +191,8 @@ exludingKeywords = [
     "装甲核心",
     "游戏王",
     "巫师",
-    "毛线卡比"
+    "毛线卡比",
+    "灵魂能力"
 ]
 
 excludings = set([
@@ -792,7 +793,10 @@ excludings = set([
     "东方千夜帖",
     "龙珠战士Z",
     "史诗战斗幻想5",
-    
+    "东方冰之勇者记 ~ Touhou Hero of Ice Fairy",
+    "苍翼：混沌效应",
+    "バグと魔法使い",
+    "印蒂卡",
 ])
 
 async def fetchImageIfNotExists(session, imgUrl, imgName, name, cookies):
