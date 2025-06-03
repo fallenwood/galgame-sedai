@@ -11,7 +11,7 @@ export const usePersistState = <T>(key: string, initialValue: T) => {
     const [state, setState] = createSignal<T>(data);
 
     createEffect(() => {
-        localStorage.setItem(key, JSON.stringify(state));
+        localStorage.setItem(key, JSON.stringify(state()));
     }, [state]);
 
     return [state, setState] as const;

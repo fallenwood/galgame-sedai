@@ -223,7 +223,7 @@ export const App = () => {
             全选
           </button>
 
-          {selectedAnime.length > 0 && (
+          {selectedAnime().length > 0 && (
             <button
               type="button"
               class="border rounded-md px-4 py-2 inline-flex"
